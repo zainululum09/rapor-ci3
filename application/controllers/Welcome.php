@@ -20,6 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('test');
+		$data = [
+			'page_title'=> 'Beranda'
+		];
+		$this->template->load('template','test', $data);
 	}
 }
