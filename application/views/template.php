@@ -42,7 +42,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-flex align-items-center">
-      <h4 class=""> <?= $page_title ?></h4>
+      <h4>:: <?= $page_title ?></h4>
       </li>
     </ul>
 
@@ -115,10 +115,10 @@
           
           <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
+            <a href="<?= base_url() ?>admin/data" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
-                Calendar
+                Data
               </p>
             </a>
           </li>
@@ -134,7 +134,7 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
+      <div class="container-fluid py-3">
         <!-- Small boxes (Stat box) -->
         <?= $contents; ?>
         <!-- /.row (main row) -->
